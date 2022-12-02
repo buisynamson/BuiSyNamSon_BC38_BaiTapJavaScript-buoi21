@@ -33,6 +33,7 @@ function createStaff() {
   staffList.push(staff);
   renderStaff();
   saveLocalStorage();
+ $("#myModal").modal("hide"); //khi thêm thành công  thì tắt bảng
 }
 
 function renderStaff(data) {
@@ -149,6 +150,7 @@ function updateStaff() {
   document.getElementById("tknv").disabled = false;
   renderStaff();
   saveLocalStorage();
+  $("#myModal").modal("hide"); //khi cập nhật thành công thì tắt bảng
 }
 
 function searchStaff(e) {
